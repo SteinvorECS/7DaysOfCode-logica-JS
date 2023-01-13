@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio-2.css">
+    <title>Bot Motivador do Estudante</title>
+</head>
+<body>
+    <main>
+
+        <h1 class="titulo-da-pagina">
+            Bot Motivador de Estudante
+        </h1>
+
+        <div class="apresentacao">
+            <p>
+                Responda às perguntas abaixo para obter sua motivação!
+            </p>
+        </div>
+
+        <div data-entrada="primeiras-perguntas">   
+            <label for="nome" class="perguntas-do-bot">
+                Qual o seu nome?
+            </label>
+            <input type="text" id="nome" class="input-do-usuario">
+            <label for="idade" class="perguntas-do-bot">
+                Quantos anos você tem?
+            </label>
+            <input type="number" id="idade" class="input-do-usuario">
+            <label for="linguagem" class="perguntas-do-bot">
+            Qual linguagem de programação você está estudando?
+            </label>
+            <input type="text" id="linguagem" class="input-do-usuario">
+        </div>
+
+        <div class="hide" data-saida="primeira-resposta">
+           <p class="resposta-do-bot">
+
+           </p>
+        </div>
+        <div class="hide" data-entrada="segunda-pergunta">
+           <label for="pergunta-adicional" class="perguntas-do-bot"></label>
+           <input type="number" id="pergunta-adicional" class="input-do-usuario">
+        </div>
+
+        <div class="hide" data-saida="segunda-resposta">
+            <p class="resposta-do-bot">
+                
+            </p>
+        </div>
+
+    </main>
+
+    <script src="desafio-2.js"></script>
+</body>
+</html>
