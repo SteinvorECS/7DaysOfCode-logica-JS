@@ -44,7 +44,7 @@ Dessa forma, o desafio proposto é reescrever o dódigo abaixo de forma que ipri
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
 }
 
-# Proposta de resolução
+## Proposta de resolução
 
 Iniciarei verificando quais são as afirmações que fazem sentido no código acima, para verificar em cada situação se o retorno deve ser ***true*** ou ***false***.
 
@@ -52,7 +52,7 @@ Iniciarei verificando quais são as afirmações que fazem sentido no código ac
 
 Como os pares de variáveis (*numeroX* e *stringX*) acima tem o mesmo valor mas tipos diferentes, isso é, contém o mesmo valor *X* mas uma é do tipo *número* e outra é do tipo *string*, devo usar o operador ***"=="*** para obter ***true*** e ***"==="*** para obter ***false*** (se a nota acima estiver correta).
 
-# Descrição da resolução final
+## Descrição da resolução final
 
 Neste desafio a resolução final ficou como a proposta acima.
 
