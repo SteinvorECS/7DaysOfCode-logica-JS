@@ -51,3 +51,12 @@ Iniciarei verificando quais são as afirmações que fazem sentido no código ac
 > Nota: Pelo que me lembro até o momento, para comparar o valor das variáveis usamos o operador ***"=="*** e para comparar valor e tipo usamos ***"==="***.
 
 Como os pares de variáveis (*numeroX* e *stringX*) acima tem o mesmo valor mas tipos diferentes, isso é, contém o mesmo valor *X* mas uma é do tipo *número* e outra é do tipo *string*, devo usar o operador ***"=="*** para obter ***true*** e ***"==="*** para obter ***false*** (se a nota acima estiver correta).
+
+# Descrição da resolução final
+
+Neste desafio a resolução final ficou como a proposta acima.
+
+1. Criei um arquivo js para declarar as variáveis, e criei as funções firstComparison, secondComparison e thirdComparison.
+2. Observei que na primeira e terceira comparações o resultado deveria ser ***true*** para que aparecesse a mensagem correta, enquanto na segunda comparação deveria ser ***false***.
+3. Para obter o resultado acima usei o operador ***"=="*** na primeira e terceira função, e o operador ***"==="*** na segunda função.
+4. Testei as funções no console do navegador para confirmar se o resultado obtido era o esperado.
