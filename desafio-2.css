@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.apresentacao {
+    text-align: center;
+    font-size: 2em;
+}
+
+div {
+    margin: 0 auto;
+    width: 430px;
+}
+
+label, input {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    margin-bottom: .5em;
+}
+
+input {
+    margin-bottom: 1em;
+    max-width: 430px;
+}
+
+button {
+    display: block;
+    width: 10em;
+    margin: 0 1em 0 auto;
+}
+
+.resposta-do-bot {
+    text-align: center;
+    font-size: 1.4em;
+    background-color: rgb(89, 89, 206);
+    color: white;
+    border-radius: 13px;
+}
+
+.hide {
+    display: none;
+}
