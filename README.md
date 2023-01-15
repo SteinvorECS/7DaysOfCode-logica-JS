@@ -25,7 +25,7 @@ Os arquivos deverão ser criados e atualizados na seguinte ordem:
 
 ## Créditos
 
-Todos os desafios propostos aqui são parte do programa "7 Days of Code" da Alura, que é gratuito e pode ser acessado [aqui](https://7daysofcode.io/matricula/logica-programacao)
+Todos os desafios propostos aqui são parte do programa "7 Days of Code - Lógica com Javascript" da Alura (por Rafaella Ballerini), que é gratuito e pode ser acessado [aqui](https://7daysofcode.io/matricula/logica-programacao)
 
 A resolução dos desafios será feita exclusivamente pelo autor do repositório, [Eduardo C. Siqueira][def]
 

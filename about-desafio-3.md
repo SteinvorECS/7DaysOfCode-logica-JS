@@ -1,4 +1,4 @@
-# Desafio 2
+# Desafio 3
 
 ## Proposta
 
@@ -45,9 +45,13 @@ O algortimo proposto inicia então na hora do input, com os seguintes passos:
 2. Se valor diferente de 'Fullstack', 'Seguir se especializando', ou 'Não':
 
     2.1. Armazenar na lista de Linguagens
+
     2.2. Buscar mensagem personalizada da lista de mensagens e exibir
+
     2.3. Buscar próxima pergunta da lista de perguntas e exibir
+
     2.4. Buscar opção 1 da lista de opções e exibir campo de input
+
     2.5. Buscar opção 2 da lista de opções e exibir campo de input
 3. Se passo 2 retornar false:
 
