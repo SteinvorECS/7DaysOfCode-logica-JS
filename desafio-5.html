@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio-5.css">
+    <title>Sua Lista de Compras</title>
+</head>
+<body>
+    <h1>Sua Lista de Compras</h1>
+
+    <div data-conteudo="p-inicial">
+        <p data-mensagem="m-inicial">Olá! Vamos começar! Gostaria de adicionar um item à sua lista de compras?</p>
+        <p class="hide" data-mensagem="m-novo-item"> Gostaria de continuar adicionando itens à sua lista de compras?</p>
+
+        <button data-input="b-sim">Sim</button><button data-input="b-nao">Não</button>
+    </div>
+
+    <div data-conteudo="c-de-itens">
+        <p>Digite abaixo o nome do item que deseja adicionar à lista e selecione a categoria à qual pertence.</p>
+        
+        <input type="text" data-input="item">
+
+        <ul>
+            <li>
+                <input type="radio" name="categorias" id="c-1" data-categoria="Frutas">
+                <label for="c-1">Frutas</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-2" data-categoria="Laticínios">
+                <label for="c-2">Laticinios</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-3" data-categoria="Congelados">
+                <label for="c-3">Congelados</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-4" data-categoria="Doces">
+                <label for="c-4">Doces</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-5" data-categoria="Limpeza">
+                <label for="c-5">Limpeza</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-6" data-categoria="Higiene">
+                <label for="c-6">Higiene</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-7" data-categoria="Bebidas">
+                <label for="c-7">Bebidas</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-8" data-categoria="Panificação">
+                <label for="c-8">Panificação</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-9" data-categoria="Outros">
+                <label for="c-9">Outros</label>
+            </li>
+        </ul>
+
+        <button data-input="b-cadastrar">Cadastrar</button>
+    </div>
+
+    <div data-conteudo="exibe-lista">
+        <p>Aqui está a sua lista!</p>
+        <div data-conteudo="imprime-lista">
+
+        </div>
+
+        <button data-input="b-voltar-ao-inicio">Continuar adicionando itens</button> <button data-input="b-resetar">Fazer nova lista</button>
+    </div>
+
+    <script src="desafio-5.js"></script>
+</body>
+</html>
