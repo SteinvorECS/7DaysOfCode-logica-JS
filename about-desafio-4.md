@@ -45,4 +45,31 @@ O algoritmo desencadeado pela função será:
 
 ## Descrição da resolução final
 
-...
+A resolução final deste desafio ficou bastante parecida com a plejada anteriormente. Segue uma descrição com as principais diferenças.
+
+No HTML depois de iniciar com o título criei 3 *divs* diferentes para os diferentes cenários do jogo.
+1. Divisão com conteúdo do jogo em si (frase inicial desafiando o jogador, input para número, botão de *enviar*, mensagem de palpite errado, contador de tentativas restantes)
+2. Divisão com conteúdeo de "vitória" (com frase de parabéns e botão de *Recomeçar*)
+3. Divisão com contéudo de "derrota" (Com mensagem revelando o número correto e botão de *Recomeçar*)
+
+No código JS:
+1. Criei as variaveis de número correto e número de tentativas
+2. Criei as referências dos botões, das *div*, e dos locais de inserção de texto personalizado.
+3. Criei funções para esconder *div* inserindo classe "hide", mostrar *div* fazendo o oposto, e função de limpar o campo de Input.
+4. Criei a função de palpite, associada depois ao botão de enviar. A função:
+
+    4.1. Registra o palpite em uma variável
+
+    4.2. Atualiza o contador de tentativas
+
+    4.3. Atualiza a mensagem de tentativas restantes
+
+    4.4. Se o palpite for correto, esconde a *div* de jogo e mostra a *div* de vitória atualizando a mensagem com número de tentativas usadas.
+
+    4.5. Se a contagem de palpites chegar a 3 sem acertar, esconde a *div* de jogo e mostra a *div* de derrota, atualizando a mensagem com o número correto.
+
+    4.6. Se o palpite for incorreto e a contagem de palpites for diferente de 3, atualiza a mensagem personalizada de tentativa com o número arriscado ("X não é o número em que estou pensando..."), e limpa o campo de input.
+
+5. Criei a função de recomeçar, que zera o número de tentativas, reseta os campos personalizados e esconde as outras *div*, mostrando a *div* de jogo.
+
+6. Associei as funções aos botões.
