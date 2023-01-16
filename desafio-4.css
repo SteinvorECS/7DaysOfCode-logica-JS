@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+div {
+    background-color: goldenrod;
+    border-radius: 5px;
+    width: 440px;
+    margin: 10px auto;
+    padding: 1em 2em;
+}
+
+.hide {
+    display: none;
+}
+
+p {
+    margin: 0;
+}
+
+input, button {
+    margin: 1em 0;
+}
+
+.restart {
+    display: block;
+    width: 20%;
+    margin: 1em 40%;
+}
+
+.custom-message {
+    display: inline;
+}

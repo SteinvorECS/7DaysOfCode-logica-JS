@@ -27,7 +27,9 @@ O algoritmo desencadeado pela função será:
 3. Se tentativa igual ao número alvo:
 
     3.1. Apresenta mensagem de parabenização
+
     3.2. Apresenta mensagem exibindo quantas tentativas foram usadas
+    
     3.3. Apresenta botão de recomeçar
 
 4. Se o passo *3* retornar *false*:

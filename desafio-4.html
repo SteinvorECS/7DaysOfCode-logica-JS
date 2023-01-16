@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio-4.css">
+    <title>Adivinhe o número</title>
+</head>
+<body>
+
+    <h1>Adivinhe o número</h1>
+    
+    <div data-content="game">
+        <p>Olá! Consegue adivinhar em que número estou pensando, de 0 a 10?</p>
+
+        <input type="number" max="10" data-input="guess">
+        <button data-button="try">Tentar</button>
+
+        <p data-message="missed"><!--Espaço para mensagem personalizada--></p>
+        <p class="custom-message"> Você tem </p> <p class="custom-message" data-message="tries">3</p> <p class="custom-message">tentativas restantes!</p>
+    </div>
+
+    <div class="hide" data-content="correct-guess">
+        <p class="custom-message">Parabéns! Você conseguiu adivinhar o número correto em</p> <p class="custom-message" data-message="tries">X</p> <p class="custom-message">tentativas!</p>
+    
+        <button class="restart" data-button="restart">Recomeçar</button>
+    </div>
+
+    <div class="hide" data-content="out-of-tries">
+        <p>Que pena! Não foi dessa vez.</p>
+        <p class="custom-message">O número em que eu estava pensando era</p> <p class="custom-message" data-message="correct-number">X</p>
+    
+        <button class="restart" data-button="restart">Recomeçar</button>
+    </div>
+
+    <script src="desafio-4.js"></script>
+</body>
+</html>
