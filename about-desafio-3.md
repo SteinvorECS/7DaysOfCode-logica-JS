@@ -69,4 +69,25 @@ O algortimo proposto inicia então na hora do input, com os seguintes passos:
 
 ## Descrição da resolução final
 
-...
+Após iniciar a composição do HTML e começar com esboço de Javascript, percebi que a resolução proposta inicialmente acabaria deixando quase todo o HTML dentro do código JS. Isso porque cada resposta acionaria um destino diferente e precisaria fazer enxerto de um trecho de html diferente. Nesse caso, o HTML ficaria praticamente só com um parágrafo onde seriam inseridas as perguntas, 2 inputs onde seriam colocadas as opções, e mais um parágrafo para inserção de mensagem customizada. Para evitar isso acabei optando por outra solução, após algumas tentativas e mudanças.
+
+Inicialmente deixei o HTML com praticamente todo o texto, com as perguntas e botões para opções, separando cada etapa em *divs*. Assim, a cada etapa o comando levaria à exibição da div correta para a etapa seguinte (através da inserção e remoção de uma classe "hide").
+
+No arquivo JS, iniciei como planejado criando uma *array* guardar a informação de tecnologias escolhidas pelo usuário ao longo do jogo. Também criei uma variável para guardar a resposta  de área escolhida (Front ou Back-End) e outra para resposta à carreira (Fullstack ou especializando-se na área escolhida).
+
+Depois, para organização do código, armazenei as referências para botoes e divs em variáveis com os nomes adequados.
+
+Em seguida, criei as funções para cada botão e atribuí, usando laços *for*.
+
+>Usei um laço para os primeiros 2 botões (alternativas à primeira pergunta), que levariam à segunda ou terceira *div*, e armazenariam a resposta em "área".
+
+>Um outro laço para os botões da segunda etapa, que levariam à quarta *div*, e armazenariam os valores na lista de linguagens aprendidas. Aqui coloquei uma personalização da mensagem inicial da terceira etapa, incluindo a área escolhida e a linguagem aprendida.
+
+>Na terceira etapa criei mais um laço para função dos dois botões que armazenariam o dado de "carreira" e levariam à quinta *div*, a última etapa.
+
+>Na última etapa cada botão tinha funcionalidades diferentes, por isso criei um função para cada.
+>>O primeiro deles era um botão *enviar* com input de texto ao lado, que captura então o valor digitado e adiciona à lista de linguagens. Esse botão também altera o parágrafo logo abaixo alertando que a tecnologia foi adicionada à lista. Ao usar este botão o usuário continua na mesma *div*, com possibilidade de ir adicionando quantas tecnologias quiser.
+>
+>>O Segundo botão desta etapa foi o botão de finalizar. Quando acionado, o código cria uma string com todas as linguagens aprendidas listadas, para juntar a um texto personalizado exibindo no fim todas as escolhas do usuário, como uma mensagem de parabenização por ter chegado ao fim.
+
+A solução final ficou bastante diferente da proposta inicial, apesar de o algoritmo manter alguns trechos parecidos, como a captura e armazenaento das informações. A parte mais personalizada para cada etapa usando JS foi deixada de lado para evitar a presença de muit código HTML dentro do arquivo JS. Ainda assim, pretendo no futuro criar uma nova versão da solução, seguindo a proposta inicial para poder comparar as duas alternativas.
