@@ -1,7 +1,6 @@
 var linguagensAprendidas = [];
 var carreira;
 var area;
-var valorDoInput;
 
 const listaDeBotoes = document.querySelectorAll('button');
 const listaDeDivs = document.querySelectorAll('[data-perfil]');
