@@ -17,57 +17,57 @@
         <button data-input="b-sim">Sim</button><button data-input="b-nao">Não</button>
     </div>
 
-    <div data-conteudo="c-de-itens">
+    <div class="hide" data-conteudo="c-de-itens">
         <p>Digite abaixo o nome do item que deseja adicionar à lista e selecione a categoria à qual pertence.</p>
         
         <input type="text" data-input="item">
 
         <ul>
             <li>
-                <input type="radio" name="categorias" id="c-1" data-categoria="Frutas">
+                <input type="radio" name="categorias" id="c-1" data-categoria="0">
                 <label for="c-1">Frutas</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-2" data-categoria="Laticínios">
+                <input type="radio" name="categorias" id="c-2" data-categoria="1">
                 <label for="c-2">Laticinios</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-3" data-categoria="Congelados">
+                <input type="radio" name="categorias" id="c-3" data-categoria="2">
                 <label for="c-3">Congelados</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-4" data-categoria="Doces">
+                <input type="radio" name="categorias" id="c-4" data-categoria="3">
                 <label for="c-4">Doces</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-5" data-categoria="Limpeza">
+                <input type="radio" name="categorias" id="c-5" data-categoria="4">
                 <label for="c-5">Limpeza</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-6" data-categoria="Higiene">
+                <input type="radio" name="categorias" id="c-6" data-categoria="5">
                 <label for="c-6">Higiene</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-7" data-categoria="Bebidas">
+                <input type="radio" name="categorias" id="c-7" data-categoria="6">
                 <label for="c-7">Bebidas</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-8" data-categoria="Panificação">
+                <input type="radio" name="categorias" id="c-8" data-categoria="7">
                 <label for="c-8">Panificação</label>
             </li>
             <li>
-                <input type="radio" name="categorias" id="c-9" data-categoria="Outros">
+                <input type="radio" name="categorias" id="c-9" data-categoria="8">
                 <label for="c-9">Outros</label>
             </li>
         </ul>
 
         <button data-input="b-cadastrar">Cadastrar</button>
+        <button data-input="b-voltar"> Cancelar e voltar </button>
     </div>
 
-    <div data-conteudo="exibe-lista">
+    <div class="hide" data-conteudo="exibe-lista">
         <p>Aqui está a sua lista!</p>
-        <div data-conteudo="imprime-lista">
-
+        <div data-mensagem="imprime-lista">
         </div>
 
         <button data-input="b-voltar-ao-inicio">Continuar adicionando itens</button> <button data-input="b-resetar">Fazer nova lista</button>

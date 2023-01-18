@@ -3,7 +3,6 @@ var tries = 0
 
 const sendButton = document.querySelector('[data-button="try"]')
 const restartButtons = document.querySelectorAll('[data-button="restart"]')
-const divList = document.querySelectorAll('div')
 const gameDiv = document.querySelector('[data-content="game"]')
 const lossDiv = document.querySelector('[data-content="out-of-tries"]')
 const winDiv = document.querySelector('[data-content="correct-guess"]')
