@@ -29,4 +29,10 @@ Depois disso criarei a função do botão *enviar*, com os seguintes passos:
 Por fim criarei as funções dos botões recomeçar (resetando todas as variáveis), e de voltar para a *div* de cadastro de *item* sem apagar dados.
 ## Descrição da resolução final
 
-...
+Neste desafio a resolução final ficou com uma diferença em relação à proposição inicial: no uso dos inputs do tipo *radio* com nomes da categorias, e na forma de adicionar o item à array da categoria selecionada.
+
+Primeiro, ao invés de capturar o valor usei um data-atribute chamado "data-categoria".
+
+Tentei usar o atributo "categoria" com mesmo valor que o nome da Array correspondente, para tentar armazenar diretamente o item adicionado. Isso não funcionou, pois ao criar a função o sistema não entende ainda a variável com o nome do atributo "categoria" como o nome da Array correspondente (provavelmente pelo fato de o nome do atributo ser uma String).
+
+Para resolver o problema acima, criei uma Array contendo todas as arrays de categoria, na mesma ordem que os inputs. Para cada input deixei no atributo "categoria" o número do index da categoria na Array. Por exemplo, se a array "laticínios" é o segundo elemento na array de categorias (logo index 1), o input "laticínios" recebeu o atributo "categoria" = 1. Dessa forma consegui inserir o item na array correta com "`listaCategorias[categoriaNovoProduto].push (novoProduto)`".
