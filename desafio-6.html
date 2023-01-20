@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio-6.css">
+    <title>Sua Lista de Compras</title>
+</head>
+<body>
+    <h1>Sua Lista de Compras</h1>
+
+    <div data-conteudo="p-inicial">
+        <p data-mensagem="m-inicial">Olá! Vamos começar! Gostaria de adicionar um item à sua lista de compras?</p>
+        <p class="hide" data-mensagem="m-novo-item"> Gostaria de continuar adicionando itens à sua lista de compras?</p>
+
+        <button data-input="b-sim">Sim</button><button data-input="b-nao">Não</button>
+
+        <button class="botao-segunda-linha" data-input="b-deseja-remover">Remover item da minha lista</button>
+    </div>
+
+    <div class="hide" data-conteudo="c-de-itens">
+        <p>Digite abaixo o nome do item que deseja adicionar à lista e selecione a categoria à qual pertence.</p>
+        
+        <input type="text" data-input="item">
+
+        <ul>
+            <li>
+                <input type="radio" name="categorias" id="c-1" data-categoria="0">
+                <label for="c-1">Frutas</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-2" data-categoria="1">
+                <label for="c-2">Laticinios</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-3" data-categoria="2">
+                <label for="c-3">Congelados</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-4" data-categoria="3">
+                <label for="c-4">Doces</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-5" data-categoria="4">
+                <label for="c-5">Limpeza</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-6" data-categoria="5">
+                <label for="c-6">Higiene</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-7" data-categoria="6">
+                <label for="c-7">Bebidas</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-8" data-categoria="7">
+                <label for="c-8">Panificação</label>
+            </li>
+            <li>
+                <input type="radio" name="categorias" id="c-9" data-categoria="8" checked>
+                <label for="c-9">Outros</label>
+            </li>
+        </ul>
+
+        <button data-input="b-cadastrar">Cadastrar</button>
+        <button data-input="b-voltar"> Cancelar e voltar </button>
+    </div>
+
+    <div class="hide" data-conteudo="r-itens">
+        <p>Aqui está a sua lista até o momento:</p>
+        
+        <div data-mensagem="imprime-lista-remocao">
+        </div>
+        
+        <label for="remover-item">Qual item gostaria de remover da sua lista?</label>
+        <input type="text" id="remover-item" data-input="remover-item">
+
+        <button data-input="b-remover">Remover</button>
+        <button data-input="b-voltar">Voltar</button>
+    </div>
+
+    <div class="hide" data-conteudo="confirma-remocao">
+        <p data-mensagem="m-confirma-remocao"> Tudo certo! X foi removido da lista.</p>
+        <button data-input="b-voltar">Continuar</button>
+    </div>
+
+    <div class="hide" data-conteudo="exibe-lista">
+        <p>Aqui está a sua lista!</p>
+        <div data-mensagem="imprime-lista-final">
+        </div>
+
+        <button data-input="b-voltar">Continuar adicionando itens</button> <button data-input="b-resetar">Fazer nova lista</button>
+    </div>
+
+    <script src="desafio-6.js"></script>
+</body>
+</html>

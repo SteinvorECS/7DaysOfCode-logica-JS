@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+.botao-segunda-linha {
+    display: block;
+    margin: 1em auto;
+}
+
+.hide {
+    display: none;
+}
