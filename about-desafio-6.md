@@ -42,4 +42,4 @@ Para a função de remoção, os passos serão os seguintes:
 
 ## Descrição da resolução final
 
-...
+A resolução deste desafio ficou como a descrita acima, sem alterações significativas.
