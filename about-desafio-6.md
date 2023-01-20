@@ -31,10 +31,13 @@ Para a função de remoção, os passos serão os seguintes:
 3. Se o valor de input fornecido não estiver na lista - exibir alerta
 4. Se a condição acima retornar *false*:
 
-    4.1. Remover o item da lista
-    4.2. Esconder a *div* de remoção
-    4.3. Criar a mensagem personalizada confirmando a remoção
-    4.4. Exibir a *div* de confirmação com a mensagem formada
+    4.1. Remover o item da lista;
+
+    4.2. Esconder a *div* de remoção;
+    
+    4.3. Criar a mensagem personalizada confirmando a remoção;
+    
+    4.4. Exibir a *div* de confirmação com a mensagem formada;
 
 
 ## Descrição da resolução final
