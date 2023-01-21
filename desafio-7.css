@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+.input-numeros {
+    display: inline-block;
+    margin: 0 1em;
+
+}
+
+p.input-numeros {
+    font-size: 1.5em;
+}
+
+.botao-unico {
+    display: block;
+    margin: 1em auto;
+}
+
+.hide {
+    display: none;
+}

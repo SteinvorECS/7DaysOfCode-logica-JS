@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio-7.css">
+    <title>Calculadora 7DaysOfCode</title>
+</head>
+<body>
+
+    <h1>Calculadora 7DaysOfCode</h1>
+
+    <div class="" data-conteudo="define-operacao">
+        <p>Qual operação gostaria de realizar?</p>
+
+        <button data-botao="b-soma"> + </button> <button data-botao="b-subtracao"> - </button> <button data-botao="b-multiplicacao"> x </button> <button data-botao="b-divisao"> &divide; </button>
+    
+        <button class="botao-unico" data-botao="b-sair">Sair</button>
+    </div>
+
+    <div class="hide" data-conteudo="define-numeros">
+        <p>Digite abaixo os números para realizar a operação:</p>
+
+        <input type="number" class="input-numeros" data-input="primeiro-numero">
+        <p class="input-numeros" data-mensagem="operação"> Erro! Escolha a operação antes de prosseguir </p>
+        <input type="number" class="input-numeros" data-input="segundo-numero">
+
+        <button class="botao-unico" data-botao="b-calcular">Calcular</button>
+        <button class="botao-unico" data-botao="b-voltar">Voltar</button>
+    </div>
+
+    <div class="hide" data-conteudo="resultados">
+        <p> Resultados:</p>
+        <div data-mensagem="resultados">
+
+        </div>
+        <button data-botao="b-apagar">Apagar histórico</button>
+    </div>
+
+    <div class="hide" data-conteudo="fim">
+        <p>Até a próxima!</p>
+    </div>
+    
+    <script src="desafio-7.js"></script>
+</body>
+</html>
