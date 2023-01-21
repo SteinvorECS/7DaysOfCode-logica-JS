@@ -31,4 +31,4 @@ Por último atribuirei as funções aos botões.
 
 ## Descrição da resolução final
 
-...
+Não houveram alterações significativas no código planejado ao aplicar a resolução deste desafio.
