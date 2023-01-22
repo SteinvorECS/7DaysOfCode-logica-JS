@@ -109,11 +109,11 @@ function removerItem () {
     }
     else {
     listaCategorias.forEach (elemento => elemento.splice (item.indexOf(), 1))
-    }
     mensagemConfirmaRemoção.innerHTML = 'Tudo certo! "'+item+'" foi removido da lista.'
     escondeDivs ()
     resetaCampos ()
     mostraElemento (divConfirmaRemocao)
+    }
 }
 
 //--Funções auxiliares-------------------------------------------
